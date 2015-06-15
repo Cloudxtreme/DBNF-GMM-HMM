@@ -1,0 +1,45 @@
+[ヘルプ]
+DB_ROOT
+　NoiseAddHPFが動作しない
+　　NoiseAddHPF.cをDB_ROOT/env/prog/srcに
+　　存在する状態で、compile.cshを実行してください。
+　NoiseAddHPFでも雑音が小さく感じる
+　　NoiseAddHPF -H　で実行してください。
+　DBVF、DBAVFを用いて音響モデルを学習できない
+　　init40.hed、init80.hedがDB_ROOTにうつされているか
+　　確認してください。
+
+DNN
+　4.1.mybackprop_*.shで次元数が異なるとエラーがでる
+　　ラベルデータとフレーム数が異なっている発話データが
+　　存在しています。
+　　1.0.check_frame.shとMatlabのcheck_frame.mを用いて
+　　特定し、ラベルデータを修正してください。
+　4.1.mybackprop_*.shでオーバーフローが生じる
+　　xdatでまとめるデータの数を減らしてください。
+　4.1.mybackprop_*.shでnanと表示され学習が進まない
+　　学習率が大きすぎるので、小さく設定してください。
+
+Matlab
+　alignがうまく進まない
+　　手動でファイルを編集する必要があるときがあります。
+　　各処理が終わるごとに生成されたファイルを確認してください。
+
+USER_ROOT
+　構築した音響モデルを用いてJuliusを動かせない
+　　spのHMMにおいて、初期状態から終端状態に
+　　遷移する確率が割り振られているとJuliusでは
+　　動きません。
+　　pretrain.shによってできあがるhmm10/hmmdefsの
+　　spの状態遷移確率を修正した後、mytrain.shを
+　　実行してください。
+
+work_julius
+　*listが何に対応しているのかわからない
+　　av		:DBAF+DBVF
+　　dbnf	:DBAF
+　　mfcpca	:MFCC+PCA
+　　prob	:DNN-HMM
+
+
+2015/3/31 Hiroshi Ninomiya
