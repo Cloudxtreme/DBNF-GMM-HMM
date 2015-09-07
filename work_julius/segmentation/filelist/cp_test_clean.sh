@@ -1,3 +1,8 @@
+#!/bin/sh
+
+cp /home/ideally/User/USER_ROOT/param/audio/MFCC_E_D_A/test/clean/*/*.mfc ../work
+
+: <<comment
 cp /home_2/h_ninomiya/work/MY_ROOT/param/audio/MFCC_E_D_A/test/clean/FBJ/FBJ_135A.mfc ../work
 cp /home_2/h_ninomiya/work/MY_ROOT/param/audio/MFCC_E_D_A/test/clean/FBJ/FBJ_15O3456A.mfc ../work
 cp /home_2/h_ninomiya/work/MY_ROOT/param/audio/MFCC_E_D_A/test/clean/FBJ/FBJ_1A.mfc ../work
@@ -1961,3 +1966,4 @@ cp /home_2/h_ninomiya/work/MY_ROOT/param/audio/MFCC_E_D_A/test/clean/MHR/MHR_OB.
 cp /home_2/h_ninomiya/work/MY_ROOT/param/audio/MFCC_E_D_A/test/clean/MHR/MHR_Z3A.mfc ../work
 cp /home_2/h_ninomiya/work/MY_ROOT/param/audio/MFCC_E_D_A/test/clean/MHR/MHR_Z7Z1ZZ9A.mfc ../work
 cp /home_2/h_ninomiya/work/MY_ROOT/param/audio/MFCC_E_D_A/test/clean/MHR/MHR_ZA.mfc ../work
+comment

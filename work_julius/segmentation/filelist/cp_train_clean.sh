@@ -1,3 +1,9 @@
+#!/bin/sh
+
+cp /home/ideally/User/USER_ROOT/param/audiovisual/MFCC_E_D_A-eigenlip_10/train/clean/clean/infrared/*/*.mfcpca ../work
+
+
+: <<comment
 cp /home_2/h_ninomiya/work/MY_ROOT/param/audiovisual/MFCC_E_D_A-eigenlip_10/train/clean/clean/infrared/FBH/FBH_137A.mfcpca ../work
 cp /home_2/h_ninomiya/work/MY_ROOT/param/audiovisual/MFCC_E_D_A-eigenlip_10/train/clean/clean/infrared/FBH/FBH_1838512A.mfcpca ../work
 cp /home_2/h_ninomiya/work/MY_ROOT/param/audiovisual/MFCC_E_D_A-eigenlip_10/train/clean/clean/infrared/FBH/FBH_18A.mfcpca ../work
@@ -3232,3 +3238,4 @@ cp /home_2/h_ninomiya/work/MY_ROOT/param/audiovisual/MFCC_E_D_A-eigenlip_10/trai
 cp /home_2/h_ninomiya/work/MY_ROOT/param/audiovisual/MFCC_E_D_A-eigenlip_10/train/clean/clean/infrared/MHS/MHS_Z9A.mfcpca ../work
 cp /home_2/h_ninomiya/work/MY_ROOT/param/audiovisual/MFCC_E_D_A-eigenlip_10/train/clean/clean/infrared/MHS/MHS_ZA.mfcpca ../work
 cp /home_2/h_ninomiya/work/MY_ROOT/param/audiovisual/MFCC_E_D_A-eigenlip_10/train/clean/clean/infrared/MHS/MHS_ZB.mfcpca ../work
+comment
